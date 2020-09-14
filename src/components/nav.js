@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
-
-import Logo from "../images/logo.png"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+import Logo from "../images/WMHD-Logo.png"
 
 class Nav extends React.Component {
   state = {}
@@ -35,10 +35,16 @@ class Nav extends React.Component {
             <div id="navbar">
               <ul className="nav navbar-nav">
                 <li className="visible-xs-block">
-                  <Link to="/" className="brand"><img src={Logo} height="70px" alt="WMHD Logo" /></Link>
+                  <Link to="/" className="brand"><img src={Logo} height="60px" alt="WMHD Logo" /></Link>
                 </li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/services">Services</Link></li>
+                <li class="dropdown">
+                <a href="/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><AnchorLink to="/about#current">Current </AnchorLink> </li>
+                    <li><AnchorLink to="/about#history">History </AnchorLink> </li>
+                  </ul>
+                </li>
+                <li><a href="/Services">Services</a></li>
                 <li className="hidden-xs">
                   <Link to="/" className="brand"><img src={Logo} alt="WMHD Logo" /></Link>
                 </li>

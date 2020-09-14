@@ -21,6 +21,7 @@
     color: #800000;
   }
   a {
+    color: #9e0000;
     text-decoration: none;
   }
   a:hover,
@@ -38,13 +39,11 @@
     background-color: #181818;
     color: #cccccc;
     overflow-x: hidden;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 18px;
     width: 100%;
   }
   body h1,
-  body h2,
-  body h3,
   body h4,
   body h5 {
     font-family: "Oswald", helvetica, sans-serif;
@@ -52,8 +51,20 @@
     color: #ffffff;
     text-transform: uppercase;
   }
+  body h2 {
+    font-family: "Oswald", helvetica, sans-serif;
+    font-weight: 600;
+    color: #ad241a;
+    text-transform: uppercase;
+  }
+  body h3 {
+    font-family: "Oswald", helvetica, sans-serif;
+    font-weight: 600;
+    color: #ed5f55;
+    text-transform: uppercase;
+  }
   body p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.7;
   }
   .bold {
@@ -1814,6 +1825,12 @@ a:hover {
   font-size: 18px;
 }
 
+@media only screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
 .history-list {
   padding: 10px;
 }
@@ -1847,3 +1864,43 @@ a:hover {
 .player-social i.fa-facebook:hover {
   color: #3b5998;
 }
+
+.def-button2 {
+  border-color: #ffffff;
+  border-width: 4px;
+  border-style: solid;
+  text-transform: uppercase;
+  padding: 2px 4px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  font-family: "Oswald", helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.def-button2:hover {
+  color: #ffffff;
+  border-color: #800000;
+}
+.def-button2:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+.def-button2::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 0%;
+  height: 100%;
+  background: #800000;
+  color: #ffffff;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+ 
