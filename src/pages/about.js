@@ -34,15 +34,16 @@ const AboutPage = ({data}) => (
       The hours that the radio is open weekly are posted below.</p>
       
       <h3>Open Radio Room Hours and Weekly Events</h3>
-      <div><b>Monday:</b> 2:00 PM - 5:00 PM (Logan)</div>
+      <div><b>Monday:</b> 4:00 PM - 6:00 PM (Andrew)</div>
+      <div><b>Tuesday:</b> 1:30 PM - 4:00 PM (Donald)</div>
       <div>&emsp; Officer Mettings at 8:00 PM</div> 
-      <div><b>Tuesday:</b> 2:00 PM - 5:00 PM (Donald)</div>
-      <div><b>Wednesday:</b> 12:00 PM - 2:00 PM (Laya) <br /> &emsp; 2:00 PM - 4:00 PM (Theo)</div>
-      <div>&emsp; Club Meetings at 7:00 PM</div>
-      <div><b>Thursday:</b> 8:00 PM - 10:00 PM (Natalija)</div>
-      <div><b>Friday:</b> 1:30 PM - 4:00 PM (Andrew)</div>
-      <div>&emsp; Jam Session from 7:00 PM to 9:00 PM</div>
-      <div><b>Saturday:</b> Jam Session from 7:00 PM to 10:00 PM</div>
+      <div><b>Wednesday:</b> 1:00 PM - 3:00 PM (Natalija) <br /> &emsp; 3:00 PM - 5:00 PM (Logan)</div>
+      <div>&emsp; Club Meetings at 8:00 PM</div>
+      <div><b>Thursday:</b> 3:00 PM - 6:00 PM (Laya) <br /> &emsp; 6:00 PM - 8:00 PM (Theo)</div>
+      <div><b>Friday:</b> Jam Sessions from 7:00 PM to 9:00 PM</div>
+      <div><b>Saturday:</b> Guitar Lessons from 2:00 PM - 3:00 PM</div>
+      <div>&emsp; Production Lessons from 7:00 PM - 8:00 PM</div> 
+      <div>&emsp; Jam Sessions from 8:00 PM to 11:00 PM</div> 
       <div><b>Sunday:</b> 2:00 PM - 4:00 PM (Keith)</div>
     </section>
   </>
